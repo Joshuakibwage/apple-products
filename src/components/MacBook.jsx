@@ -46,11 +46,11 @@ const MacBook = () => {
             
         </div>
         <div className="flex flex-col 2xl:p-4 md:items-start items-center ">
-            <div className="w-80 h-64 2xl:mb-0 -mb-6">
+            <div className="w-70 h-40 2xl:mb-0 ">
                 <img 
                     src={currentColor.img}
                     alt={`McBook Air with ${currentMb.chip}`}
-                    className="2xl:w-72 xl:w-52 w-48 h-full 2xl:mt-0 "
+                    className="2xl:w-52 xl:w-52 w-48 h-[100%] 2xl:mt-0 object-contain"
                 />
             </div>
                 <span className="2xl:text-lg xl:text-sm font-medium text-gray-800 mb-2 text-center md:text-left">
