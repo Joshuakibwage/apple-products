@@ -4,7 +4,7 @@ import { useState } from "react";
 
 const IMac = () => {
 
-  const [selectedColor, setSelectedColor] = useState('Yellow');
+  const [selectedColor, setSelectedColor] = useState('Purple');
 
   const [visibleLabel, setVisibleLabel] = useState("Green");
 
@@ -62,7 +62,7 @@ console.log(imacModels)
               <button 
               style={{backgroundColor: model.bg}}
               className={`2xl:w-8 md:w-5 w-4 2xl:h-8 md:h-5 h-4 rounded-full flex items-center justify-center
-              ${
+              cursor-pointer ${
                 selectedColor === model.label.toLowerCase() ? "border-2 border-blue-500" : ""
               }`}
               onClick={() => {

@@ -5,6 +5,7 @@ import Home from "./components/Home"
 import Watch from "./components/Watch"
 import IMac from "./components/IMac"
 import Navbar from "./components/Navbar"
+import PageTransition from "./components/PageTransition"
 import { useState } from "react"; 
 
 
@@ -41,11 +42,14 @@ const App = () => {
           frameZoom={frameZoom}
         />
         <div className="flex-grow">
-          {/* <Home /> */}
-          {/* <Iphone /> */}
-          {/* <MacBook /> */}
-          {/* <Watch /> */}
-          <IMac />
+     
+          <PageTransition activePage={activePage}>
+            <Home onNavigate={handlePageClick}/> 
+            <Iphone />
+            <MacBook />
+            <Watch />
+            <IMac /> 
+          </PageTransition>
         </div>
       </div>
     </div>
