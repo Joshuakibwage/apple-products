@@ -25,6 +25,9 @@ const App = () => {
     setFrameZoom(!frameZoom)
   }
 
+  const resetPage = () => {
+    setActivePage(0)
+  }
 
   return (
     <div className="w-full h-screen grid place-items-center">
@@ -40,6 +43,8 @@ const App = () => {
         <Controls 
           toggleZoom={toggleZoom}
           frameZoom={frameZoom}
+          resetPage={resetPage}
+          activePage={activePage}
         />
         <div className="flex-grow">
      
